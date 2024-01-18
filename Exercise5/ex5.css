@@ -1,0 +1,205 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+html{
+  font-size: 10px;
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+*/
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    /*position: fixed;
+    height: 100%;
+    width: 100%;*/
+  display: grid;
+  flex: 33,3%;
+  flex-wrap: wrap;
+  padding: 0 4px;
+ 
+  background-size: contain;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main  main right'
+    'menu main main main main  main right'
+    'menu main main main main  main right'
+    'menu main main main main  main right'
+    'menu main main main main  main right'
+    'menu main main main main  main right'
+    'footer footer footer footer footer footer footer';
+
+  background-color:rgb(0, 0, 0);
+  padding: 10px;
+}
+
+
+.grid-container > div {
+  background-color: #c5a880;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  /*padding:10px;*/
+  width: 100%;
+
+
+
+}
+mark{
+  background-color: #532e1c4a;;
+}
+
+h2{
+  font-size:3vw;
+}
+
+
+.grid-container> .item1 {
+    background-color: rgba(252, 249, 241, 0.767);
+    outline-color: black;
+    color: tan;
+    width: 100%;
+ 
+  
+}
+.grid-container> .item2{
+  display: block;
+    background-color: #532e1c;
+    color: tan;
+    font-size:1.7vw;
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+    float: left;
+    width: 97%;
+    
+}
+
+.grid-container > .item3{
+  float: left;
+  width: 99%;
+  height: auto;
+  padding: 0 20px;
+  overflow: hidden;
+
+}
+
+
+.grid-container> .item4{
+    background-color:#532e1c;
+    color: tan;
+    font-size:1.7vw;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
+
+.grid-container > .item5{
+
+    bottom: 0;
+    font-size:1vw;
+    background-color: rgba(252, 249, 241, 0.767);
+    color: rgba(0, 0, 0, 0.596);
+ 
+} 
+
+p{
+    font-family: monospace;
+    font-size:unset;
+    text-align:justify;
+    font-size:2vw;
+}
+
+
+
+.flex-container {
+    display: flex;
+    background-color:#c5a880;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  
+
+  
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #532e1c;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    text-decoration: none;
+
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: rgb(104, 90, 72);
+    color: rgba(245, 231, 223, 0.767);
+    cursor: pointer;
+  }
+  li a:active{
+    background-color: rgb(104, 90, 72);
+    color: rgba(159, 167, 92, 0.767);
+    cursor: pointer;
+  }
+
+  article{
+    text-align: left;
+  }
+
+  section{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    font-size:2vw;
+  }
+
+  figure{
+    text-align: center;
+    font-size:2vw;
+  }
+  /*a{
+    color: tan;
+      cursor: pointer;
+      text-decoration: underline;
+  }*/
+   @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .item1{
+      width: 100%;
+    }
+    .item2{
+      width: 40%;
+    }
+    .item3 {
+      width: 60%;
+      padding: 0;
+    }
+    .item4 {
+      width: 20%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .item2, .item3, .item4 {
+      width: 100%;
+    }}

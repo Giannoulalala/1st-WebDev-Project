@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li> <a href="Ekp.html"> Εκπαιδευτικό Υπόβαθρο</a></li>
+        <li><a href="Endiaferonta.html"> Ενδιαφέροντα</a></li>
+        <li><a href="deksiothtes.html"> Δεξιότητες</a></li>
+        </ul>
+        
+        <form action="mailto:tagari19ioanna@gmail.com" method="post">
+            <fieldset>
+                <legend>Στοιχεία Επικοινωνίας</legend>
+                <label>Τηλέφωνο Επικοινωνίας: </label>
+                <input type="tel" name="Tlephone_Please" id="for_contact" 
+                placeholder="Your Phone number Please" required> <br> <br>
+                <label>Email: </label>
+                <input type="email" name="email" id="email" autocomplete="email" list="user_emails">
+                <br><br>
+                <label>Πότε να επικοινωνήσουμε μαζί σας; </label>
+                <input type="datetime-local" name="date_to_contact" id="date_to_contact">
+                <br> <br>
+                <label>Επιλέξτε το αρχείο που θέλετε να μας στείλετε: </label>
+                <input type="file" name="sent_me_the appication" id="app">
+                <br><br>
+                <label>Ταυτότητα παρακαλώ:  </label>
+                <input type="text" name="id" id="id" 
+                placeholder="Your Id Please" pattern="[Α-Ω]{2} [0-9]{6}"
+                title="2 Κεφαλαία Ελληνικά κενό και 6 ψηφία. πχ. ΑΒ 123456">                 
+                <datalist id="user_emails"></datalist>
+            </fieldset>
+            <input type="submit" name="btn_submit" id="submit">
+        </form>
+    
+</body>
+</html>

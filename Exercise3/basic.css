@@ -1,0 +1,95 @@
+body{
+    background-color:rgba(48, 165, 184, 0.849);    
+    background-image:url("sea.jpg");
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+    font-size:1.5em;
+    margin :0;
+    padding:0;
+    overflow: hidden; 
+    background-color: rgba(223, 114, 64, 0.788);
+    border-style:groove;
+    border-color: black;
+
+
+
+}
+
+li{
+    float:left;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    font-size: x-large;
+    margin: 10px 200px;
+    
+}
+
+img{
+    border-radius:50%;
+}
+
+.titlos{
+    color: mediumseagreen;
+}
+
+#article_title{
+    font-weight: 200;
+}
+.info{
+    font-family: cursive;
+}
+
+article{
+    text-align: center;
+    font-family:fantasy;
+    background-color: rgba(9, 109, 139, 0.952);
+    font-size: medium;
+    margin: 5px 200px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(241, 241, 241, 0.767);
+    color: rgba(0, 0, 0, 0.596);
+    text-align: center;
+}
+
+li a{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    display: block;
+    text-align: center;
+    padding:16px;
+    text-decoration: none;
+
+}
+
+a:link{
+    color: rgb(0, 59, 59);
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(68, 212, 68, 0.733);
+
+    text-decoration: none;
+}
+a:active{
+    text-decoration: underline;
+
+}
